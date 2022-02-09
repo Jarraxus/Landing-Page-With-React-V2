@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar } from "./Navbar.jsx";
 import { Jumbotron } from "./Jumbotron.jsx";
 import { Cards } from "./Cards.jsx";
+import { Footer } from "./Footer.jsx";
 
 //create your first component
 export const Home = () => {
@@ -33,15 +34,51 @@ export const Home = () => {
 					buttonLabel="Call to action!"
 				/>
 			</div>
-			<div className="container-fullwidth">
-				<Cards
-					imgUrl="https://via.placeholder.com/500x325.png"
-					title="Card Title"
-					body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-					buttonUrl="https://www.google.com/"
-					buttonLabel="Find Out More!"
-				/>
+			<div className="container-fullwidth bg-light">
+				<div className="row">
+					<div className="col">
+						<Cards
+							imgUrl="https://via.placeholder.com/500x325.png"
+							title="Card Title"
+							body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+							buttonUrl="https://www.google.com/"
+							buttonLabel="Find Out More!"
+						/>
+					</div>
+					<div className="col">
+						<Cards
+							imgUrl="https://via.placeholder.com/500x325.png"
+							title="Card Title"
+							body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+							buttonUrl="https://www.google.com/"
+							buttonLabel="Find Out More!"
+						/>
+					</div>
+					<div className="col">
+						<Cards
+							imgUrl="https://via.placeholder.com/500x325.png"
+							title="Card Title"
+							body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+							buttonUrl="https://www.google.com/"
+							buttonLabel="Find Out More!"
+						/>
+					</div>
+					<div className="col">
+						<Cards
+							imgUrl="https://via.placeholder.com/500x325.png"
+							title="Card Title"
+							body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+							buttonUrl="https://www.google.com/"
+							buttonLabel="Find Out More!"
+						/>
+					</div>
+				</div>
 			</div>
+			<Footer
+				owner="Jarraxus"
+				date="2022"
+				link="https://github.com/Jarraxus"
+			/>
 		</div>
 	);
 };
